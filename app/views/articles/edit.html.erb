@@ -1,0 +1,9 @@
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit("Edit article") %>
+<% end %>
+<br>
+<%= link_to "Back", articles_path %>

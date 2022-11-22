@@ -1,0 +1,23 @@
+<div class="new-article-container">
+  <h1>New article</h1>
+  <div>
+    <form action="/articles" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C50MxJCsY_6jdFqvPQPSLbeU14CXblnzi1TZf2tIkWlzRm_i26eUydggfGDzHlAE6uKGxFgXDx_4b5jtGQHO1Q" autocomplete="off">
+    <label for="article_title">Title</label>
+    <input type="text" name="article[title]" id="article_title">
+
+    <%# <div class="content-form">
+      <label for="article_content">Content</label>
+      <input type="text" name="article[content]" id="article_content">
+    </div> %>
+
+    <div class="content-form">
+      <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <input class="submit-button" type="submit" name="commit" value="Create article" data-disable-with="Create article">
+    </form>
+  </div>
+
+  <%= link_to "Back", articles_path %>
+</div>
